@@ -11,7 +11,7 @@
       relationship: many_to_one
 
 
-# - explore: inventory_items
+- explore: inventory_items
   joins:
     - join: products
       type: left_outer
