@@ -43,7 +43,7 @@
 
 
 - explore: orders
-  access_filter_fields: [orders.id]
+#   access_filter_fields: [orders.id]
   joins:
     - join: users
       type: left_outer
