@@ -6,7 +6,14 @@
   rows:
       - height: 200 
         elements: [add_a_unique_name_1443804693449]
-#  filters:
+        
+  filters:
+
+  - name: order_id
+    type: number_filter
+    base_view: orders
+    dimension: orders.id
+    hidden: true
 
   elements:
 
