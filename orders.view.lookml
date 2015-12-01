@@ -8,9 +8,14 @@
 
   - dimension_group: created
     type: time
-    timeframes: [time, date, week, month]
+    timeframes: [time, date, week, month, year]
     sql: ${TABLE}.created_at
 
+  - dimension: day_of_year
+    type: int
+    sql: DATE_FORMAT(${created_date}, '%j')
+    value_format: 'mm-dd'
+    
   - dimension: status
     sql: ${TABLE}.status
 
