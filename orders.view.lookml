@@ -14,7 +14,7 @@
   - dimension: sso_link
     sql: (SELECT 1)
     html: |
-      <a href="https://zam.looker.com/dashboards/thelook::nicole_test">!</a>
+      <a href="https://zam.looker.com/embed/dashboards/thelook::nicole_test">!</a>
   - dimension: day_of_year
     type: int
     sql: DATE_FORMAT(${created_date}, '%j')
